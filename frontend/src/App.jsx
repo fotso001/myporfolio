@@ -100,17 +100,17 @@ function App() {
                   <span className="animate-ping absolute h-full w-full rounded-full bg-cyber-accent opacity-75"></span>
                   <span className="bg-cyber-accent rounded-full h-2 w-2"></span>
                 </span>
-                <span>SEC-OPS INFRASTRUCTURE READY</span>
+                <span>READY FOR NEW CHALLENGES</span>
               </div>
               <h2 className="text-7xl md:text-9xl font-black text-white leading-[0.85] tracking-tighter">
-                CYBER <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyber-accent via-blue-400 to-white glitch" data-text="ENGINEER.">ENGINEER.</span>
+                FULLSTACK <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyber-accent via-blue-400 to-white glitch" data-text="DEVELOPER.">DEVELOPER.</span>
               </h2>
               <p className="text-lg text-cyber-text/60 italic leading-relaxed max-w-xl font-medium border-l-2 border-cyber-accent pl-6">
                 "{data.profile}"
               </p>
               <div className="flex flex-wrap gap-6 pt-4">
-                <a href={`${API_BASE_URL}/downloads/ephraimCV.pdf`} download className="glow-btn px-10 py-4 bg-cyber-accent text-cyber-dark font-black rounded-sm shadow-2xl hover:bg-white transition-all transform hover:-rotate-1 active:scale-95">
+                <a href={`${API_BASE_URL}/downloads/ephraimCV_dev.pdf`} download className="glow-btn px-10 py-4 bg-cyber-accent text-cyber-dark font-black rounded-sm shadow-2xl hover:bg-white transition-all transform hover:-rotate-1 active:scale-95">
                    DOWNLOAD_CV.PDF
                 </a>
                 <div className="flex gap-4 items-center">
@@ -196,6 +196,13 @@ function App() {
                         <span className="text-[10px] text-white/20 font-black uppercase tracking-widest">{exp.location || 'INTERNAL_PROJ'}</span>
                      </div>
                      <div className="md:w-3/4 glass p-10 rounded-sm border-l-4 border-white/10 group-hover:border-cyber-accent transition-all duration-500 flex flex-col space-y-6">
+                        {exp.badge && (
+                           <div className="inline-block">
+                              <span className={`text-[10px] font-black tracking-widest px-3 py-1 rounded-sm border transition-colors ${exp.badge === 'FULLSTACK' ? 'border-emerald-500/50 text-emerald-400 bg-emerald-500/10 group-hover:border-emerald-400 group-hover:bg-emerald-500/20' : 'border-rose-500/50 text-rose-400 bg-rose-500/10 group-hover:border-rose-400 group-hover:bg-rose-500/20'}`}>
+                                 {exp.badge === 'FULLSTACK' ? '💻 FULLSTACK' : '🛡️ CYBERSEC'}
+                              </span>
+                           </div>
+                        )}
                         <h4 className="text-3xl font-black text-white tracking-tighter">{exp.role || exp.title}</h4>
                         <p className="text-sm font-bold text-cyber-accent uppercase tracking-widest">{exp.company || 'ACADEMIC_REPOSITORY'}</p>
                         <ul className="space-y-3">
@@ -217,7 +224,7 @@ function App() {
             <div className="glass p-16 md:p-24 rounded-sm border border-white/5 relative overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-20">
                <div className="space-y-8">
                   <h3 className="text-6xl font-black text-white tracking-tighter">Let's <br />Connect_</h3>
-                  <p className="text-cyber-text/50 font-medium">Currently seeking a high-stakes apprenticeship in Cybersecurity or Software Engineering. Use the encrypted channel below.</p>
+                  <p className="text-cyber-text/50 font-medium">Currently seeking opportunities as a Fullstack Developer, with a strong interest and background in Cybersecurity projects. Use the encrypted channel below.</p>
                   <div className="space-y-4 font-mono text-xs text-cyber-accent">
                      <p className="flex items-center gap-4"><span className="text-white/20">EMAIL:</span> {data.email}</p>
                      <p className="flex items-center gap-4"><span className="text-white/20">TEL:</span> {data.phone}</p>

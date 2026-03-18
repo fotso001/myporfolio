@@ -33,7 +33,7 @@ portfolio_data = {
 # Let's keep the actual data for persistence
 portfolio_data = {
     "name": "EPHRAIM BORIS FOTSO",
-    "title": "Étudiant Ingénieur – Alternance Cybersécurité & Développement Sécurisé",
+    "title": "Développeur Fullstack & Étudiant Ingénieur (Projets Cybersécurité)",
     "location": "Île-de-France",
     "phone": "0782610112",
     "email": "fotsoephraim05@gmail.com",
@@ -42,16 +42,28 @@ portfolio_data = {
         "gitlab": "https://gitlab.esiea.fr/ephraimboris.fotsongougiegne",
         "linkedin": "https://www.linkedin.com/in/ephra%C3%AFm-boris-fotso-745143320/"
     },
-    "profile": "Futur ingénieur à l’ESIEA spécialisé en Informatique et Cybersécurité. Doté d'une solide maîtrise du développement Fullstack avec une forte sensibilité pour la sécurité applicative (OWASP), la gestion des identités (IAM/JWT) et la protection des flux de données.",
+    "profile": "Développeur Fullstack passionné, actuellement étudiant ingénieur à l'ESIEA. J'ai une solide expertise dans la création d'applications web et mobiles complètes. En parallèle, je mène activement des projets en Cybersécurité pour intégrer les meilleures pratiques (OWASP, IAM, protection des données) au cœur de mes développements.",
     "skills": {
+        "Frontend": ["React", "React Native", "JavaScript (ES6+)", "Tailwind CSS", "HTML/CSS"],
+        "Backend": ["Python", "Java", "Node.js (Express)", "Nest.js"],
         "Cybersecurity": ["Top 10 OWASP", "DevSecOps", "Gestion des secrets", "Sécurisation d'APIs REST"],
         "Systems & Networks": ["Linux (Hardening)", "TCP/IP", "HTTPS/TLS", "SSH", "Wireshark"],
-        "Backend": ["Python", "Java", "Node.js (Express)", "Nest.js"],
-        "Frontend": ["React", "React Native", "JavaScript (ES6+)", "Tailwind CSS", "HTML/CSS"],
         "DevOps & Utils": ["Docker", "Git", "CI/CD", "MySQL", "MongoDB"]
     },
     "experience": [
         {
+            "badge": "FULLSTACK",
+            "role": "Stage Pro – Développement Web",
+            "company": "Ipercash",
+            "location": "Yaoundé-Cameroun",
+            "period": "novembre 2024 – Mai 2025",
+            "highlights": [
+                "Développement d'une application de gestion de vente et de stock (utilisateur, produits, commande)",
+                "Création d'une API REST sécurisée avec JWT et middleware d'authentification"
+            ]
+        },
+        {
+            "badge": "CYBERSEC",
             "role": "Stage Pro – Sécurisation d'actifs critiques",
             "company": "Ipercash",
             "location": "Yaoundé-Cameroun",
@@ -63,8 +75,23 @@ portfolio_data = {
             ]
         },
         {
-            "role": "Projet Académique",
-            "title": "Application mobile de réservation de parking",
+            "badge": "FULLSTACK",
+            "role": "Application mobile de réservation de parking",
+            "company": "Projet Académique",
+            "location": "ESIEA",
+            "period": "2024",
+            "highlights": [
+                "Application mobile incluant inscription et réservation",
+                "Intégration en temps réel de la messagerie via Socket.io",
+                "Développement du backend en Node.js avec le modèle MVC"
+            ]
+        },
+        {
+            "badge": "CYBERSEC",
+            "role": "Réservation de parking (Sécurité intégrée)",
+            "company": "Projet Académique",
+            "location": "ESIEA",
+            "period": "2024",
             "highlights": [
                 "Développement front-end React/React Native avec stockage sécurisé des secrets",
                 "Implémentation de WebSockets (Socket.io) sécurisés via TLS"
