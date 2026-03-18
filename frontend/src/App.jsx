@@ -110,7 +110,7 @@ function App() {
                 "{data.profile}"
               </p>
               <div className="flex flex-wrap gap-6 pt-4">
-                <a href={`${API_BASE_URL}/downloads/ephraimCV_dev.pdf`} download className="glow-btn px-10 py-4 bg-cyber-accent text-cyber-dark font-black rounded-sm shadow-2xl hover:bg-white transition-all transform hover:-rotate-1 active:scale-95">
+                <a href={`${API_BASE_URL}/downloads/CV_Ephraim_Fullstack_Cyber_Merged.pdf`} download className="glow-btn px-10 py-4 bg-cyber-accent text-cyber-dark font-black rounded-sm shadow-2xl hover:bg-white transition-all transform hover:-rotate-1 active:scale-95">
                    DOWNLOAD_CV.PDF
                 </a>
                 <div className="flex gap-4 items-center">
